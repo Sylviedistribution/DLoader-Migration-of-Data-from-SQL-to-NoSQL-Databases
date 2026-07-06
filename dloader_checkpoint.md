@@ -1,5 +1,4 @@
-# 📘 CHECKPOINT FINAL  
-## DLoader: Migration of Data from SQL to NoSQL Databases
+# 📘  DLoader: Migration of Data from SQL to NoSQL Databases
 
 ---
 
