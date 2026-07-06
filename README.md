@@ -20,7 +20,8 @@ It includes a **dual-database benchmarking system** to compare performance, cons
 
 ## Project Structure
 
-```/project-root
+/project-root
+```
 ├── sql/ # SQL schema and seed data
 ├── mongodb/ # NoSQL structure output
 ├── scripts/ # ETL migration scripts
