@@ -2,7 +2,7 @@
 
 ## 1. Introduction to Data Migration
 
-Data migration is the process of transferring structured data from a source system (typically SQL-based) to a target system (often NoSQL) while preserving meaning, integrity, and usability.
+The rapid growth of cloud computing, distributed systems, and big data applications has encouraged many organizations to migrate from traditional relational databases to NoSQL databases. This report explores the DLoader methodology proposed for SQL-to-NoSQL migration, analyzes its architecture and migration process, discusses recent industry trends, and proposes a practical benchmarking approach using both SQL and NoSQL databases.
 
 Modern migration strategies are driven by:
 - scalability limitations of relational databases
@@ -118,11 +118,12 @@ However, NoSQL systems do not enforce relational integrity, so consistency must 
 - application level
 - or via data modeling strategy
 
-## 7. Practical Application (Your Improvement)
+## 7. Practical Application
 
 Dual-database validation approach:
 
-We design a system with:
+To better understand the behavior of SQL and NoSQL databases after migration, this project proposes an experimental environment composed of two databases containing the same information. Data is first stored in a MySQL database, migrated using a DLoader-inspired ETL pipeline, and then inserted into MongoDB. Identical queries are executed on both databases to compare execution time, storage requirements, indexing behavior, and data consistency. This practical experiment complements the original DLoader methodology by providing measurable performance metrics.
+
 - SQL database (source of truth)
 - NoSQL database (target system)
 
