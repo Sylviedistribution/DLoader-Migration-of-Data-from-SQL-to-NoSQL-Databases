@@ -162,6 +162,6 @@ DLoader provides a structured ETL methodology, extended in modern systems with:
 - performance benchmarking
 
 ## 📚 References
-Rajaram, K. et al. (2023). DLoader: Migration of Data from SQL to NoSQL Databases. Springer.
-Systematic Review: SQL vs NoSQL Databases (2022)
-Migration Strategies in Distributed Systems (2023–2025 literature)
+- Rajaram, K. et al. (2023). *DLoader: Migration of Data from SQL to NoSQL Databases*. Springer.
+- Systematic Review on SQL vs NoSQL Databases (2022)
+- Migration Strategies in Distributed Systems (2023–2025 literature)
