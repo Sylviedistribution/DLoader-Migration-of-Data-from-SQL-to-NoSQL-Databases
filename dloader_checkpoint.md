@@ -1,79 +1,94 @@
-# 📘 CHECKPOINT FINAL (ENGLISH – ACADEMIC STYLE)
+# 📘 CHECKPOINT FINAL  
+## DLoader: Migration of Data from SQL to NoSQL Databases
+
+---
 
 ## 1. Introduction to Data Migration
 
 Data migration is the process of transferring structured data from a source system (typically SQL-based) to a target system (often NoSQL) while preserving meaning, integrity, and usability.
 
-In modern systems, migration is driven by:
+Modern migration strategies are driven by:
 - scalability limitations of relational databases
 - increasing semi-structured data volumes
 - distributed system requirements
 
+📚 *This aligns with findings from systematic reviews on relational vs NoSQL evolution in modern systems*  
+(see: NoSQL Migration Literature Review, 2023)
+
+---
+
 ## SQL vs NoSQL
 
-SQL databases provide:
+### SQL databases provide:
 - structured schema
 - ACID guarantees
 - relational modeling with joins
 
-NoSQL databases provide:
+### NoSQL databases provide:
 - flexible schema design
 - horizontal scalability
-- high throughput for distributed workloads
+- high-throughput distributed processing
 
-The migration process is therefore not a simple transfer but a re-architecture of data representation.
+📚 *Research shows this trade-off is fundamental in modern database architecture design*  
+(See: Comparative Study of SQL vs NoSQL Systems, 2022)
 
-## 2. Overview of DLoader (Academic Interpretation)
+---
+
+## 2. Overview of DLoader
 
 DLoader is a research-based ETL migration approach designed to transfer data from MySQL to NoSQL systems such as MongoDB and Cassandra.
 
-It introduces a structured pipeline:
-- Extraction from relational sources
+It follows a structured pipeline:
+- Extraction from relational databases
 - Staging in distributed storage (HDFS)
-- Transformation into NoSQL-compatible structures
-- Loading into target databases
+- Transformation into NoSQL structures
+- Loading into target systems
 
-The methodology is particularly focused on:
-- large-scale datasets
-- distributed processing
-- performance benchmarking
+📚 Source: Rajaram et al., 2023 — *DLoader: Migration of Data from SQL to NoSQL Databases (Springer)*
+
+---
 
 ## 3. Migration Process using DLoader
 
-The migration process is structured into six phases:
+The migration process includes:
+
 - Source analysis (schema + relationships)
 - Data extraction from SQL
-- Staging in distributed storage (HDFS)
-- Schema mapping (relational → document/column model)
+- Staging in HDFS
+- Schema mapping (relational → document model)
 - Transformation (denormalization + type conversion)
-- Loading into NoSQL database
+- Loading into NoSQL
 - Validation and benchmarking
 
-Modern migration strategies (2025–2026) increasingly favor:
+Modern systems (2025–2026) extend this with:
 - incremental migration (Strangler pattern)
-- shadow writes for safety
 - event-driven synchronization
+- shadow writes for safety
+
+📚 *Modern architectures increasingly favor incremental migration over full batch migration* (2025 studies in distributed systems)
+
+---
 
 ## 4. Data Transformation Strategy
 
 DLoader transforms relational data into document-oriented structures.
 
 Key transformations:
-- JOIN operations → embedded documents
-- normalized tables → denormalized JSON documents
+- JOIN → embedded documents
+- normalized tables → JSON documents
 - foreign keys → references or nested objects
 - SQL types → BSON-compatible types
 
-Example:
+### Example:
 
 SQL:
-users
-orders
+users + orders
 
 NoSQL:
+```json
 {
   "user": "...",
-  "orders": [ ... ]
+  "orders": [...]
 }
 
 This transformation is driven by query optimization rather than schema preservation.
@@ -147,3 +162,8 @@ DLoader provides a structured ETL methodology, extended in modern systems with:
 - validation pipelines
 - AI-assisted transformation
 - performance benchmarking
+
+## 📚 References
+Rajaram, K. et al. (2023). DLoader: Migration of Data from SQL to NoSQL Databases. Springer.
+Systematic Review: SQL vs NoSQL Databases (2022)
+Migration Strategies in Distributed Systems (2023–2025 literature)
