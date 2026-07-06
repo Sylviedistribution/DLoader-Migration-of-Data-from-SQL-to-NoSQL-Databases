@@ -1,7 +1,5 @@
 # 📘  DLoader: Migration of Data from SQL to NoSQL Databases
 
----
-
 ## 1. Introduction to Data Migration
 
 Data migration is the process of transferring structured data from a source system (typically SQL-based) to a target system (often NoSQL) while preserving meaning, integrity, and usability.
