@@ -86,7 +86,8 @@ NoSQL:
 {
   "user": "...",
   "orders": [...]
-}```
+}
+```
 
 This transformation is driven by query optimization rather than schema preservation.
 
