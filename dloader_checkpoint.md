@@ -162,6 +162,8 @@ DLoader provides a structured ETL methodology, extended in modern systems with:
 - AI-assisted transformation
 - performance benchmarking
 
+Overall, DLoader demonstrates that SQL-to-NoSQL migration is more than a simple data transfer operation. It requires careful schema redesign, data transformation, and validation to preserve consistency while taking advantage of NoSQL scalability. The experimental benchmarking proposed in this project further illustrates the practical implications of migration by comparing the behavior of both database models under identical workloads.
+
 ## 📚 References
 - Rajaram, K. et al. (2023). *DLoader: Migration of Data from SQL to NoSQL Databases*. Springer.
 - Systematic Review on SQL vs NoSQL Databases (2022)
