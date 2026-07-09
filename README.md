@@ -41,10 +41,6 @@ dloader-migration-of-data-from-sql-to-nosql-databases/
 │   ├── load.js                        # Load phase
 │   └── migrate.js                     # Execute the complete ETL pipeline
 │
-├── mongodb/
-│   ├── collections.md                 # Description of MongoDB collections
-│   └── screenshots/                   # MongoDB Compass screenshots (optional)
-│
 ├── .env.example                       # Environment variables template
 ├── .gitignore
 ├── package.json
