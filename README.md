@@ -23,12 +23,34 @@ It includes a **dual-database benchmarking system** to compare performance, cons
 /project-root
 
 ```
-├── sql/ # SQL schema and seed data
-├── mongodb/ # NoSQL structure output
-├── scripts/ # ETL migration scripts
-├── benchmark/ # performance comparison tools
-├── docs/ # documentation (checkpoint report)
-└── README.md
+dloader-migration-of-data-from-sql-to-nosql-databases/
+│
+├── sql/
+│   ├── ma_petite_robe_en_wax.sql      # SQL dump
+│
+├── output/
+│   ├── extracted.json                 # Output of Extract phase
+│   └── transformed.json               # Output of Transform phase
+│
+├── scripts/
+│   ├── config/
+│   │   ├── database.js                # MySQL configuration
+│   │
+│   ├── extract.js                     # Extract phase
+│   ├── transform.js                   # Transform phase
+│   ├── load.js                        # Load phase
+│   └── migrate.js                     # Execute the complete ETL pipeline
+│
+├── mongodb/
+│   ├── collections.md                 # Description of MongoDB collections
+│   └── screenshots/                   # MongoDB Compass screenshots (optional)
+│
+├── .env.example                       # Environment variables template
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+└── LICENSE
 ```
 
 ---
